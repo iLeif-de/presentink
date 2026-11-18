@@ -1,0 +1,13 @@
+// Signing settings shared by all targets.
+//
+// The team ID is personal and stays out of the repository. To sign with your
+// own team, create Config/Signing.local.xcconfig (ignored by Git) containing:
+//
+//     DEVELOPMENT_TEAM = YOURTEAMID
+//
+// Leave the team empty in Xcode's Signing & Capabilities tab; it is read from
+// this file.
+
+DEVELOPMENT_TEAM =
+
+#include? "Signing.local.xcconfig"

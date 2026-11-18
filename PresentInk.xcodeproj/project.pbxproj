@@ -93,6 +93,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C9A1C0DE000000000000F001 /* Signing.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Signing.xcconfig; path = Config/Signing.xcconfig; sourceTree = "<group>"; };
 		070352486922CCADDE1A7D4A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0A4418F1A9F742CFEFA36A53 /* Shortcuts.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Shortcuts.entitlements; sourceTree = "<group>"; };
 		0D1349CCDE93DA09957D0E19 /* AutomationActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomationActions.swift; sourceTree = "<group>"; };
@@ -271,6 +272,7 @@
 			children = (
 				4E3B69ED2FE14ED915377347 /* README.md */,
 				C81000000000000000000002 /* LICENSE */,
+				C9A1C0DE000000000000F001 /* Signing.xcconfig */,
 				3A94543EB9924834F6201D9C /* macOS App */,
 				150EC73F484043A4E6A5ED72 /* iPadOS Companion */,
 				284807A872CA12E14923592E /* Shortcuts Extension */,
@@ -577,6 +579,7 @@
 /* Begin XCBuildConfiguration section */
 		1D8C0C6B1D22EA8C7669B263 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9A1C0DE000000000000F001 /* Signing.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -603,7 +606,6 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -632,7 +634,6 @@
 				CURRENT_PROJECT_VERSION = 18;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = NO;
@@ -654,7 +655,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 18;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = Apps/iPadOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
@@ -678,7 +678,6 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 18;
-				DEVELOPMENT_TEAM = "";
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = NO;
@@ -707,7 +706,6 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 18;
-				DEVELOPMENT_TEAM = "";
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = NO;
@@ -736,7 +734,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 18;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = Apps/iPadOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
@@ -755,6 +752,7 @@
 		};
 		BFD315016DE16320F7E2120C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9A1C0DE000000000000F001 /* Signing.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -781,7 +779,6 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = "";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -813,7 +810,6 @@
 				CURRENT_PROJECT_VERSION = 18;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = "";
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = NO;
