@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionary title="PresentInk">
+  <suite name="PresentInk Suite" code="PIAn" description="Control the Mac annotation app without UI scripting. All command results are JSON text; credentials are never returned.">
+    <class name="application" code="capp" description="The PresentInk application." plural="applications">
+      <cocoa class="NSApplication" />
+      <property name="status" code="pSTA" type="text" access="r">
+        <cocoa key="presentInkStatus" />
+      </property>
+      <property name="available displays" code="pDSP" type="text" access="r">
+        <cocoa key="presentInkDisplays" />
+      </property>
+      <property name="drawing enabled" code="pDRW" type="boolean" access="rw">
+        <cocoa key="presentInkDrawing" />
+      </property>
+      <property name="annotations visible" code="pVIS" type="boolean" access="rw">
+        <cocoa key="presentInkVisible" />
+      </property>
+      <property name="drawer state" code="pDWR" type="text" access="rw" description="expanded, compact, hidden (Griff) oder invisible (vollständig ausgeblendet)">
+        <cocoa key="presentInkDrawer" />
+      </property>
+      <property name="current tool" code="pTOL" type="text" access="rw">
+        <cocoa key="presentInkTool" />
+      </property>
+      <property name="ink color" code="pCLR" type="text" access="rw">
+        <cocoa key="presentInkColor" />
+      </property>
+      <property name="stroke width" code="pWID" type="real" access="rw">
+        <cocoa key="presentInkWidth" />
+      </property>
+      <property name="display index" code="pDIX" type="integer" access="rw">
+        <cocoa key="presentInkDisplay" />
+      </property>
+      <property name="connection enabled" code="pCON" type="boolean" access="rw">
+        <cocoa key="presentInkConnection" />
+      </property>
+      <property name="preview enabled" code="pPRV" type="boolean" access="rw">
+        <cocoa key="presentInkPreview" />
+      </property>
+    </class>
+    <command name="toggle drawing" code="PIAnTgDr" description="Zeichenmodus umschalten">
+      <cocoa class="PresentInkScriptCommand" />
+      <result type="text" description="Current state as JSON (or display list for list displays)." />
+    </command>
+    <command name="enable drawing" code="PIAnEnDr" description="Zeichnen einschalten">
+      <cocoa class="PresentInkScriptCommand" />
+      <result type="text" description="Current state as JSON (or display list for list displays)." />
+    </command>
+    <command name="disable drawing" code="PIAnDsDr" description="Bedienmodus aktivieren">
+      <cocoa class="PresentInkScriptCommand" />
+      <result type="text" description="Current state as JSON (or display list for list displays)." />
+    </command>
+    <command name="show annotations" code="PIAnShAn" description="Annotationen zeigen">
+      <cocoa class="PresentInkScriptCommand" />
+      <result type="text" description="Current state as JSON (or display list for list displays)." />
+    </command>
+    <command name="hide annotations" code="PIAnHdAn" description="Annotationen ausblenden">
+      <cocoa class="PresentInkScriptCommand" />
+      <result type="text" description="Current state as JSON (or display list for list displays)." />
+    </command>
+    <command name="toggle annotations" code="PIAnTgAn" description="Annotationen umschalten">
+      <cocoa class="PresentInkScriptCommand" />
+      <result type="text" description="Current state as JSON (or display list for list displays)." />
+    </command>
+    <command name="show drawer" code="PIAnExDw" description="Drawer ausziehen">
+      <cocoa class="PresentInkScriptCommand" />
+      <result type="text" description="Current state as JSON (or display list for list displays)." />
+    </command>
+    <command name="compact drawer" code="PIAnCpDw" description="Drawer kompakt">
+      <cocoa class="PresentInkScriptCommand" />
+      <result type="text" description="Current state as JSON (or display list for list displays)." />
+    </command>
+    <command name="hide drawer" code="PIAnHdDw" description="Drawer verstecken">
+      <cocoa class="PresentInkScriptCommand" />
+      <result type="text" description="Current state as JSON (or display list for list displays)." />
+    </command>
+    <command name="toggle drawer" code="PIAnTgDw" description="Drawer umschalten">
+      <cocoa class="PresentInkScriptCommand" />
+      <result type="text" description="Current state as JSON (or display list for list displays)." />
+    </command>
+    <command name="undo annotation" code="PIAnUndo" description="Rückgängig">
+      <cocoa class="PresentInkScriptCommand" />
+      <result type="text" description="Current state as JSON (or display list for list displays)." />
+    </command>
+    <command name="redo annotation" code="PIAnRedo" description="Wiederholen">
+      <cocoa class="PresentInkScriptCommand" />
+      <result type="text" description="Current state as JSON (or display list for list displays)." />
+    </command>
+    <command name="clear annotations" code="PIAnClAn" description="Alle Annotationen löschen">
+      <cocoa class="PresentInkScriptCommand" />
+      <result type="text" description="Current state as JSON (or display list for list displays)." />
+    </command>
+    <command name="start connection" code="PIAnStCn" description="iPad-Verbindung starten">
+      <cocoa class="PresentInkScriptCommand" />
+      <result type="text" description="Current state as JSON (or display list for list displays)." />
+    </command>
+    <command name="stop connection" code="PIAnSpCn" description="iPad-Verbindung stoppen">
+      <cocoa class="PresentInkScriptCommand" />
+      <result type="text" description="Current state as JSON (or display list for list displays)." />
+    </command>
+    <command name="toggle connection" code="PIAnTgCn" description="iPad-Verbindung umschalten">
+      <cocoa class="PresentInkScriptCommand" />
+      <result type="text" description="Current state as JSON (or display list for list displays)." />
+    </command>
+    <command name="start preview" code="PIAnStPv" description="Bildschirmvorschau starten">
+      <cocoa class="PresentInkScriptCommand" />
+      <result type="text" description="Current state as JSON (or display list for list displays)." />
+    </command>
+    <command name="stop preview" code="PIAnSpPv" description="Bildschirmvorschau pausieren">
+      <cocoa class="PresentInkScriptCommand" />
+      <result type="text" description="Current state as JSON (or display list for list displays)." />
+    </command>
+    <command name="toggle preview" code="PIAnTgPv" description="Bildschirmvorschau umschalten">
+      <cocoa class="PresentInkScriptCommand" />
+      <result type="text" description="Current state as JSON (or display list for list displays)." />
+    </command>
+    <command name="emergency hide" code="PIAnEmHd" description="Notfall: Eingabe freigeben">
+      <cocoa class="PresentInkScriptCommand" />
+      <result type="text" description="Current state as JSON (or display list for list displays)." />
+    </command>
+    <command name="show settings" code="PIAnShSt" description="Verbindung und Freigabe öffnen">
+      <cocoa class="PresentInkScriptCommand" />
+      <result type="text" description="Current state as JSON (or display list for list displays)." />
+    </command>
+    <command name="reset pairing" code="PIAnRsPr" description="Kopplung zurücksetzen">
+      <cocoa class="PresentInkScriptCommand" />
+      <parameter name="confirmed" code="cnfm" type="boolean" description="Explicitly confirm revoking all previous pairing keys.">
+        <cocoa key="confirmed" />
+      </parameter>
+      <result type="text" description="Current state as JSON (or display list for list displays)." />
+    </command>
+    <command name="show application" code="PIAnShAp" description="PresentInk zeigen">
+      <cocoa class="PresentInkScriptCommand" />
+      <result type="text" description="Current state as JSON (or display list for list displays)." />
+    </command>
+    <command name="hide application" code="PIAnHdAp" description="PresentInk ausblenden">
+      <cocoa class="PresentInkScriptCommand" />
+      <result type="text" description="Current state as JSON (or display list for list displays)." />
+    </command>
+    <command name="quit" code="PIAnQuit" description="PresentInk beenden">
+      <cocoa class="PresentInkScriptCommand" />
+      <result type="text" description="Current state as JSON (or display list for list displays)." />
+    </command>
+    <command name="read status" code="PIAnStat" description="Status abfragen">
+      <cocoa class="PresentInkScriptCommand" />
+      <result type="text" description="Current state as JSON (or display list for list displays)." />
+    </command>
+    <command name="list displays" code="PIAnDpls" description="Displays auflisten">
+      <cocoa class="PresentInkScriptCommand" />
+      <result type="text" description="Current state as JSON (or display list for list displays)." />
+    </command>
+    <command name="show shortcuts" code="PIAnShHp" description="Tastaturkürzel anzeigen">
+      <cocoa class="PresentInkScriptCommand" />
+      <result type="text" description="Current state as JSON (or display list for list displays)." />
+    </command>
+    <command name="show about" code="PIAnShAb" description="Über PresentInk anzeigen">
+      <cocoa class="PresentInkScriptCommand" />
+      <result type="text" description="Current state as JSON (or display list for list displays)." />
+    </command>
+    <command name="open display settings" code="PIAnDsSt" description="Anzeigeeinstellungen öffnen">
+      <cocoa class="PresentInkScriptCommand" />
+      <result type="text" description="Current state as JSON (or display list for list displays)." />
+    </command>
+    <command name="open capture settings" code="PIAnCpSt" description="Aufnahmeberechtigungen öffnen">
+      <cocoa class="PresentInkScriptCommand" />
+      <result type="text" description="Current state as JSON (or display list for list displays)." />
+    </command>
+    <command name="select tool" code="PIAnSlTl" description="Werkzeug setzen">
+      <cocoa class="PresentInkScriptCommand" />
+      <direct-parameter type="text" description="Value to set." />
+      <result type="text" description="Current state as JSON (or display list for list displays)." />
+    </command>
+    <command name="select color" code="PIAnSlCl" description="Farbe setzen">
+      <cocoa class="PresentInkScriptCommand" />
+      <direct-parameter type="text" description="Value to set." />
+      <result type="text" description="Current state as JSON (or display list for list displays)." />
+    </command>
+    <command name="change stroke width" code="PIAnStWd" description="Strichstärke setzen">
+      <cocoa class="PresentInkScriptCommand" />
+      <direct-parameter type="real" description="Value to set." />
+      <result type="text" description="Current state as JSON (or display list for list displays)." />
+    </command>
+    <command name="change drawer" code="PIAnStDw" description="Drawer-Zustand setzen: expanded, compact, hidden (Griff), invisible (vollständig aus)">
+      <cocoa class="PresentInkScriptCommand" />
+      <direct-parameter type="text" description="Value to set." />
+      <result type="text" description="Current state as JSON (or display list for list displays)." />
+    </command>
+    <command name="select display" code="PIAnSlDs" description="Zieldisplay setzen">
+      <cocoa class="PresentInkScriptCommand" />
+      <direct-parameter type="integer" description="Value to set." />
+      <parameter name="clearing annotations" code="clra" type="boolean" optional="yes" description="Must be true to switch displays when annotations exist.">
+        <cocoa key="clearingAnnotations" />
+      </parameter>
+      <result type="text" description="Current state as JSON (or display list for list displays)." />
+    </command>
+    <command name="show preferences" code="PIAnShPf" description="Zeichen-Einstellungen öffnen">
+      <cocoa class="PresentInkScriptCommand" />
+      <result type="text" description="JSON status or drawing settings." />
+    </command>
+    <command name="read drawing settings" code="PIAnRdSt" description="Zeichen-Einstellungen und Profile lesen">
+      <cocoa class="PresentInkScriptCommand" />
+      <result type="text" description="JSON status or drawing settings." />
+    </command>
+    <command name="apply drawing settings" code="PIAnApSt" description="Zeichen-Einstellungen aus JSON anwenden">
+      <cocoa class="PresentInkScriptCommand" />
+      <direct-parameter type="text" />
+      <result type="text" description="JSON status or drawing settings." />
+    </command>
+    <command name="select profile" code="PIAnSlPr" description="Zeichenprofil auswählen">
+      <cocoa class="PresentInkScriptCommand" />
+      <direct-parameter type="text" />
+      <result type="text" description="JSON status or drawing settings." />
+    </command>
+    <command name="change ink opacity" code="PIAnStOp" description="Deckkraft des aktuellen Werkzeugs (0.05–1)">
+      <cocoa class="PresentInkScriptCommand" />
+      <direct-parameter type="real" />
+      <result type="text" description="JSON status or drawing settings." />
+    </command>
+    <command name="configure sharing" code="PIAnShPl" description="PresentInk-Zustimmung der aktuellen Kopplung als JSON einstellen">
+      <cocoa class="PresentInkScriptCommand" />
+      <direct-parameter type="text" />
+      <result type="text" description="JSON status or drawing settings." />
+    </command>
+    <command name="insert text" code="PIAnInTx" description="Beschriftung mit Mac-Textstil einfügen; Position normalisiert 0–1.">
+      <cocoa class="PresentInkScriptCommand" />
+      <direct-parameter type="text" />
+      <parameter name="at x" code="posx" type="real" optional="yes" description="Position 0–1, Standard 0.1.">
+        <cocoa key="positionX" />
+      </parameter>
+      <parameter name="at y" code="posy" type="real" optional="yes" description="Position 0–1, Standard 0.1.">
+        <cocoa key="positionY" />
+      </parameter>
+      <result type="text" />
+    </command>
+  </suite>
+</dictionary>

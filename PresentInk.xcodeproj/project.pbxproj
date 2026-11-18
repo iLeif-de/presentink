@@ -1,0 +1,917 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		059AF4A792D705071B1FDCCE /* AutomationActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1349CCDE93DA09957D0E19 /* AutomationActions.swift */; };
+		071B654C9B7DA6E6C2AEDCA6 /* InkRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10A2B86FF38924B40F31020 /* InkRenderer.swift */; };
+		10F391D48656C239C2010217 /* PresentInkLink in Frameworks */ = {isa = PBXBuildFile; productRef = 21E28D2E4F520B37AE117A32 /* PresentInkLink */; };
+		13257EE04A2E3D6C3887F50B /* CompanionServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1631D9F528EB5829A00F14 /* CompanionServer.swift */; };
+		1BB0A9F5D87953CC4035CFC6 /* MacAutomation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413156334EA0798C24C4205D /* MacAutomation.swift */; };
+		28786B383111C51D476F730B /* PencilCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CAA56B0512265B21F6C158 /* PencilCanvasView.swift */; };
+		2ACD86240C36B951EB6F52FE /* MacAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5403F556C26B8D5D9570EA13 /* MacAppDelegate.swift */; };
+		398052D6B999701F13910B2C /* MacCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D592FB81D7870B6033B21A /* MacCanvasView.swift */; };
+		5819A48253EA223A2C49265E /* MacMenus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345B9E3E4B591A6D7C643BED /* MacMenus.swift */; };
+		5955ED70ADB3159237C97BC9 /* ScreenPreviewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDCF2A34F5EDBC98433A287 /* ScreenPreviewService.swift */; };
+		66C7D9977F0C0A9EFEF414AA /* PresentInk.sdef in Resources */ = {isa = PBXBuildFile; fileRef = DB8739E7345B730969C55F5F /* PresentInk.sdef */; };
+		6912324B29FBA69027724083 /* MacSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0886DDCA3589BAEED04FAA2 /* MacSession.swift */; };
+		70ECC6095787E26E7A57147F /* MacToolDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A473DF13C59AA0BE6BC591A /* MacToolDrawer.swift */; };
+		755C89D6A38115F5E5288ADD /* CompanionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B030D936E9CF412AA7952CD7 /* CompanionModel.swift */; };
+		77250F56BD3679E693C404B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C007C1F3D32384E3B71DD93 /* Assets.xcassets */; };
+		8C563D79534AA355A15FA320 /* PresentInkIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71368FF1F712FF7B0CBF84D /* PresentInkIntents.swift */; };
+		96090870712AB6262AABAB32 /* CompanionHostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333D7D18139BDA148F50535 /* CompanionHostView.swift */; };
+		A50100000000000000000002 /* MacHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50100000000000000000001 /* MacHelp.swift */; };
+		A50100000000000000000004 /* Anleitung.md in Resources */ = {isa = PBXBuildFile; fileRef = A50100000000000000000003 /* Anleitung.md */; };
+		A50100000000000000000006 /* Anleitung.html in Resources */ = {isa = PBXBuildFile; fileRef = A50100000000000000000005 /* Anleitung.html */; };
+		A70100000000000000000002 /* MacDrawingSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70100000000000000000001 /* MacDrawingSettingsView.swift */; };
+		A80100000000000000000002 /* MacTextEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80100000000000000000001 /* MacTextEntry.swift */; };
+		A90100000000000000000002 /* ShortcutEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90100000000000000000001 /* ShortcutEntities.swift */; };
+		A90100000000000000000004 /* ShortcutAutomation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90100000000000000000003 /* ShortcutAutomation.swift */; };
+		A90100000000000000000006 /* MacShortcutServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90100000000000000000005 /* MacShortcutServer.swift */; };
+		A90100000000000000000013 /* PresentInkShortcuts.appex in Embed Shortcuts */ = {isa = PBXBuildFile; fileRef = A90100000000000000000009 /* PresentInkShortcuts.appex */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A90100000000000000000016 /* PresentInkShortcutsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90100000000000000000007 /* PresentInkShortcutsExtension.swift */; };
+		A90100000000000000000017 /* ShortcutEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90100000000000000000001 /* ShortcutEntities.swift */; };
+		A90100000000000000000018 /* ShortcutAutomation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90100000000000000000003 /* ShortcutAutomation.swift */; };
+		A90100000000000000000019 /* PresentInkIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71368FF1F712FF7B0CBF84D /* PresentInkIntents.swift */; };
+		A9010000000000000000001A /* AutomationActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1349CCDE93DA09957D0E19 /* AutomationActions.swift */; };
+		A9010000000000000000001B /* PresentInkCore in Frameworks */ = {isa = PBXBuildFile; productRef = A90100000000000000000010 /* PresentInkCore */; };
+		A9010000000000000000001C /* PresentInkLink in Frameworks */ = {isa = PBXBuildFile; productRef = A90100000000000000000011 /* PresentInkLink */; };
+		B2B4C2ED54E42A8EE4A54324 /* PresentInkLink in Frameworks */ = {isa = PBXBuildFile; productRef = 0C4C292541A53A7059799408 /* PresentInkLink */; };
+		BEBD899198199CFFE6E168E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E73C249A3717DCA2E4C7DB5E /* Assets.xcassets */; };
+		C3BAC5F8787E835CC2C11BA1 /* PresentInkMacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5FC45F6F1D9D170EDB2F1F /* PresentInkMacApp.swift */; };
+		C71000000000000000000004 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = C71000000000000000000001 /* Localizable.xcstrings */; };
+		C71000000000000000000005 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = C71000000000000000000001 /* Localizable.xcstrings */; };
+		C71000000000000000000006 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = C71000000000000000000001 /* Localizable.xcstrings */; };
+		C72000000000000000000002 /* UserGuide.md in Resources */ = {isa = PBXBuildFile; fileRef = C72000000000000000000001 /* UserGuide.md */; };
+		C72000000000000000000004 /* UserGuide.html in Resources */ = {isa = PBXBuildFile; fileRef = C72000000000000000000003 /* UserGuide.html */; };
+		C73000000000000000000004 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = C73000000000000000000001 /* InfoPlist.xcstrings */; };
+		C73000000000000000000005 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = C73000000000000000000001 /* InfoPlist.xcstrings */; };
+		C73000000000000000000006 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = C73000000000000000000001 /* InfoPlist.xcstrings */; };
+		C74000000000000000000002 /* AppShortcuts.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = C74000000000000000000001 /* AppShortcuts.xcstrings */; };
+		C74000000000000000000003 /* AppShortcuts.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = C74000000000000000000001 /* AppShortcuts.xcstrings */; };
+		C81000000000000000000003 /* PresentInkAboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81000000000000000000001 /* PresentInkAboutView.swift */; };
+		C81000000000000000000004 /* PresentInkAboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81000000000000000000001 /* PresentInkAboutView.swift */; };
+		C81000000000000000000005 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = C81000000000000000000002 /* LICENSE */; };
+		C81000000000000000000006 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = C81000000000000000000002 /* LICENSE */; };
+		C82000000000000000000002 /* AppAboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82000000000000000000001 /* AppAboutView.swift */; };
+		C82000000000000000000003 /* AppAboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82000000000000000000001 /* AppAboutView.swift */; };
+		CD311B41B1A38A92878AD5E7 /* AppleScriptSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852B9ABC2E9080411BB412AA /* AppleScriptSupport.swift */; };
+		E14BDBE7E427E618242E68CE /* PresentInkCompanionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D0608471CBEAF5B077C9A6 /* PresentInkCompanionApp.swift */; };
+		E896F895D3B6FFFC24CBBCF1 /* CompanionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC009D6EC07BD8D59C80A906 /* CompanionView.swift */; };
+		E9B4FC7D10EB1A47425EB9D7 /* PresentInkCore in Frameworks */ = {isa = PBXBuildFile; productRef = 0089ADE67FC4C4DEB96EA35B /* PresentInkCore */; };
+		F22524CD548AB92CB689D62E /* ToolDrawerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1BB4D45A7AEBBBD07BE98F /* ToolDrawerView.swift */; };
+		F3BE805279AAB418E058632D /* PresentInkCore in Frameworks */ = {isa = PBXBuildFile; productRef = 2028B35E3225105DF70A3875 /* PresentInkCore */; };
+		FD0729798F105268D68DE785 /* InkRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10A2B86FF38924B40F31020 /* InkRenderer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A90100000000000000000015 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6F4DA8D93E88A08220E03B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A90100000000000000000008;
+			remoteInfo = PresentInkShortcuts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A90100000000000000000012 /* Embed Shortcuts */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Extensions";
+			dstSubfolderSpec = 16;
+			files = (
+				A90100000000000000000013 /* PresentInkShortcuts.appex in Embed Shortcuts */,
+			);
+			name = "Embed Shortcuts";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		070352486922CCADDE1A7D4A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0A4418F1A9F742CFEFA36A53 /* Shortcuts.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Shortcuts.entitlements; sourceTree = "<group>"; };
+		0D1349CCDE93DA09957D0E19 /* AutomationActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomationActions.swift; sourceTree = "<group>"; };
+		0DD75539768F71388B1EFCA5 /* ReleaseNotes-0.9.1.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "ReleaseNotes-0.9.1.md"; sourceTree = "<group>"; };
+		1A473DF13C59AA0BE6BC591A /* MacToolDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacToolDrawer.swift; sourceTree = "<group>"; };
+		1DDCF2A34F5EDBC98433A287 /* ScreenPreviewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenPreviewService.swift; sourceTree = "<group>"; };
+		24DB7700783EB43540095209 /* About-Reuse.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "About-Reuse.md"; sourceTree = "<group>"; };
+		2C007C1F3D32384E3B71DD93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		302771EF2746971CEA74AE87 /* Actions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Actions.json; sourceTree = "<group>"; };
+		3427E964EC2713DA997E2D63 /* Mac-Drawer-vollstaendig-ausblenden.applescript */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.applescript; path = "Mac-Drawer-vollstaendig-ausblenden.applescript"; sourceTree = "<group>"; };
+		345B9E3E4B591A6D7C643BED /* MacMenus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacMenus.swift; sourceTree = "<group>"; };
+		35320E8717CF62B180BE2D70 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		37C7C1092F33C5D9968C24B7 /* Praesentation-beenden.applescript */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.applescript; path = "Praesentation-beenden.applescript"; sourceTree = "<group>"; };
+		3D5595776E15852E09ABB240 /* render_help.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = render_help.py; sourceTree = "<group>"; };
+		3E1BB4D45A7AEBBBD07BE98F /* ToolDrawerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolDrawerView.swift; sourceTree = "<group>"; };
+		3F25BD1146F13AA76188C34D /* PresentInk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PresentInk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		413156334EA0798C24C4205D /* MacAutomation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacAutomation.swift; sourceTree = "<group>"; };
+		4E3B69ED2FE14ED915377347 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		52CAA56B0512265B21F6C158 /* PencilCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PencilCanvasView.swift; sourceTree = "<group>"; };
+		5333D7D18139BDA148F50535 /* CompanionHostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanionHostView.swift; sourceTree = "<group>"; };
+		5403F556C26B8D5D9570EA13 /* MacAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacAppDelegate.swift; sourceTree = "<group>"; };
+		556A54B173294DB4B9E73C78 /* Text-einfuegen.applescript */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.applescript; path = "Text-einfuegen.applescript"; sourceTree = "<group>"; };
+		59462DD1A3EDE7C845AB495D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DD16E05423A1A0D023D6A62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B1631D9F528EB5829A00F14 /* CompanionServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanionServer.swift; sourceTree = "<group>"; };
+		6F3014D6DE27829F291530FC /* Acceptance.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Acceptance.md; sourceTree = "<group>"; };
+		72D0608471CBEAF5B077C9A6 /* PresentInkCompanionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentInkCompanionApp.swift; sourceTree = "<group>"; };
+		8333EBFEA326F9D37D991BB1 /* ReleaseNotes-0.9.0.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "ReleaseNotes-0.9.0.md"; sourceTree = "<group>"; };
+		852B9ABC2E9080411BB412AA /* AppleScriptSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleScriptSupport.swift; sourceTree = "<group>"; };
+		989CB7577EABEC7D1FCF9A8E /* build.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
+		9C5FC45F6F1D9D170EDB2F1F /* PresentInkMacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentInkMacApp.swift; sourceTree = "<group>"; };
+		A0886DDCA3589BAEED04FAA2 /* MacSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacSession.swift; sourceTree = "<group>"; };
+		A50100000000000000000001 /* MacHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacHelp.swift; sourceTree = "<group>"; };
+		A50100000000000000000003 /* Anleitung.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Anleitung.md; sourceTree = "<group>"; };
+		A50100000000000000000005 /* Anleitung.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Anleitung.html; sourceTree = "<group>"; };
+		A70100000000000000000001 /* MacDrawingSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacDrawingSettingsView.swift; sourceTree = "<group>"; };
+		A80100000000000000000001 /* MacTextEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacTextEntry.swift; sourceTree = "<group>"; };
+		A90100000000000000000001 /* ShortcutEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutEntities.swift; sourceTree = "<group>"; };
+		A90100000000000000000003 /* ShortcutAutomation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutAutomation.swift; sourceTree = "<group>"; };
+		A90100000000000000000005 /* MacShortcutServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacShortcutServer.swift; sourceTree = "<group>"; };
+		A90100000000000000000007 /* PresentInkShortcutsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentInkShortcutsExtension.swift; sourceTree = "<group>"; };
+		A90100000000000000000009 /* PresentInkShortcuts.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = PresentInkShortcuts.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB4C6352B54D8DC9B57DE9DB /* PresentInk Companion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PresentInk Companion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B030D936E9CF412AA7952CD7 /* CompanionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanionModel.swift; sourceTree = "<group>"; };
+		B10A2B86FF38924B40F31020 /* InkRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InkRenderer.swift; sourceTree = "<group>"; };
+		C4F076004FF95E2C92F44712 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+
+
+		C71368FF1F712FF7B0CBF84D /* PresentInkIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentInkIntents.swift; sourceTree = "<group>"; };
+		C72000000000000000000001 /* UserGuide.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = UserGuide.md; sourceTree = "<group>"; };
+		C72000000000000000000003 /* UserGuide.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = UserGuide.html; sourceTree = "<group>"; };
+
+
+		C74000000000000000000001 /* AppShortcuts.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AppShortcuts.xcstrings; sourceTree = "<group>"; };
+		C81000000000000000000001 /* PresentInkAboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentInkAboutView.swift; sourceTree = "<group>"; };
+		C81000000000000000000002 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		C82000000000000000000001 /* AppAboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAboutView.swift; sourceTree = "<group>"; };
+		C989CD69182070D26C19C745 /* Review-Fixes.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Review-Fixes.md"; sourceTree = "<group>"; };
+		CBE19154BA3B05D466C5D99F /* Automation.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Automation.md; sourceTree = "<group>"; };
+		D0513DD8FFD622418594472B /* ReleaseNotes-0.9.2.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "ReleaseNotes-0.9.2.md"; sourceTree = "<group>"; };
+		D18AF1CD6C4AD4BCBF263F76 /* Architecture.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Architecture.md; sourceTree = "<group>"; };
+		D4CA37A38912DAA9C064CA3A /* archive.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = archive.py; sourceTree = "<group>"; };
+		D763545EF1A8F8DE4A71BC7D /* Praesentationsstift.applescript */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.applescript; path = Praesentationsstift.applescript; sourceTree = "<group>"; };
+		D7D592FB81D7870B6033B21A /* MacCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacCanvasView.swift; sourceTree = "<group>"; };
+		DB64E615573EBC6C8E5E1326 /* Marker-Profil.applescript */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.applescript; path = "Marker-Profil.applescript"; sourceTree = "<group>"; };
+		DB8739E7345B730969C55F5F /* PresentInk.sdef */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PresentInk.sdef; sourceTree = "<group>"; };
+		E73C249A3717DCA2E4C7DB5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E9059E99FA561E83CC3DD851 /* PresentInk.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PresentInk.entitlements; sourceTree = "<group>"; };
+		EC009D6EC07BD8D59C80A906 /* CompanionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanionView.swift; sourceTree = "<group>"; };
+		F649EF96D30DC907F4842B12 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F86EAF66A1C263A50C06B2DC /* Localization.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Localization.md; sourceTree = "<group>"; };
+		C73000000000000000000001 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
+		C71000000000000000000001 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0E650D2EAB93B876DDC8862E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3BE805279AAB418E058632D /* PresentInkCore in Frameworks */,
+				B2B4C2ED54E42A8EE4A54324 /* PresentInkLink in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9010000000000000000000B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9010000000000000000001B /* PresentInkCore in Frameworks */,
+				A9010000000000000000001C /* PresentInkLink in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F70C89477F4C05A89B45D237 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9B4FC7D10EB1A47425EB9D7 /* PresentInkCore in Frameworks */,
+				10F391D48656C239C2010217 /* PresentInkLink in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		150EC73F484043A4E6A5ED72 /* iPadOS Companion */ = {
+			isa = PBXGroup;
+			children = (
+				2C007C1F3D32384E3B71DD93 /* Assets.xcassets */,
+				B030D936E9CF412AA7952CD7 /* CompanionModel.swift */,
+				EC009D6EC07BD8D59C80A906 /* CompanionView.swift */,
+				5DD16E05423A1A0D023D6A62 /* Info.plist */,
+				52CAA56B0512265B21F6C158 /* PencilCanvasView.swift */,
+				72D0608471CBEAF5B077C9A6 /* PresentInkCompanionApp.swift */,
+				3E1BB4D45A7AEBBBD07BE98F /* ToolDrawerView.swift */,
+			);
+			name = "iPadOS Companion";
+			path = Apps/iPadOS;
+			sourceTree = "<group>";
+		};
+		284807A872CA12E14923592E /* Shortcuts Extension */ = {
+			isa = PBXGroup;
+			children = (
+				59462DD1A3EDE7C845AB495D /* Info.plist */,
+				A90100000000000000000007 /* PresentInkShortcutsExtension.swift */,
+				0A4418F1A9F742CFEFA36A53 /* Shortcuts.entitlements */,
+			);
+			name = "Shortcuts Extension";
+			path = Apps/Shortcuts;
+			sourceTree = "<group>";
+		};
+		3A94543EB9924834F6201D9C /* macOS App */ = {
+			isa = PBXGroup;
+			children = (
+				852B9ABC2E9080411BB412AA /* AppleScriptSupport.swift */,
+				E73C249A3717DCA2E4C7DB5E /* Assets.xcassets */,
+				0D1349CCDE93DA09957D0E19 /* AutomationActions.swift */,
+				5333D7D18139BDA148F50535 /* CompanionHostView.swift */,
+				6B1631D9F528EB5829A00F14 /* CompanionServer.swift */,
+				C4F076004FF95E2C92F44712 /* Info.plist */,
+				5403F556C26B8D5D9570EA13 /* MacAppDelegate.swift */,
+				413156334EA0798C24C4205D /* MacAutomation.swift */,
+				D7D592FB81D7870B6033B21A /* MacCanvasView.swift */,
+				A70100000000000000000001 /* MacDrawingSettingsView.swift */,
+				A50100000000000000000001 /* MacHelp.swift */,
+				345B9E3E4B591A6D7C643BED /* MacMenus.swift */,
+				A0886DDCA3589BAEED04FAA2 /* MacSession.swift */,
+				A90100000000000000000005 /* MacShortcutServer.swift */,
+				A80100000000000000000001 /* MacTextEntry.swift */,
+				1A473DF13C59AA0BE6BC591A /* MacToolDrawer.swift */,
+				E9059E99FA561E83CC3DD851 /* PresentInk.entitlements */,
+				DB8739E7345B730969C55F5F /* PresentInk.sdef */,
+				C71368FF1F712FF7B0CBF84D /* PresentInkIntents.swift */,
+				9C5FC45F6F1D9D170EDB2F1F /* PresentInkMacApp.swift */,
+				1DDCF2A34F5EDBC98433A287 /* ScreenPreviewService.swift */,
+				A90100000000000000000003 /* ShortcutAutomation.swift */,
+				A90100000000000000000001 /* ShortcutEntities.swift */,
+			);
+			name = "macOS App";
+			path = Apps/macOS;
+			sourceTree = "<group>";
+		};
+		51676083F8441AC7A7993D18 /* Automation */ = {
+			isa = PBXGroup;
+			children = (
+				302771EF2746971CEA74AE87 /* Actions.json */,
+				35320E8717CF62B180BE2D70 /* README.md */,
+				7E1FD8E733BD4EEC4F33C3D3 /* Examples */,
+			);
+			path = Automation;
+			sourceTree = "<group>";
+		};
+		62BCE9422FF2D14F69AB80A1 /* PresentInk */ = {
+			isa = PBXGroup;
+			children = (
+				4E3B69ED2FE14ED915377347 /* README.md */,
+				C81000000000000000000002 /* LICENSE */,
+				3A94543EB9924834F6201D9C /* macOS App */,
+				150EC73F484043A4E6A5ED72 /* iPadOS Companion */,
+				284807A872CA12E14923592E /* Shortcuts Extension */,
+				DD05F3F33DE0B44B2A9B038C /* Shared UI */,
+				C3C85BF96A474101E3970DE9 /* Localization */,
+				6D563622BF70798395796A87 /* Documentation */,
+				51676083F8441AC7A7993D18 /* Automation */,
+				CF12F54AE009D9416E4B063B /* Tools */,
+				FE0A091FDBFB3E9C31B7A1BD /* Products */,
+			);
+			name = PresentInk;
+			sourceTree = "<group>";
+		};
+		6D563622BF70798395796A87 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				24DB7700783EB43540095209 /* About-Reuse.md */,
+				6F3014D6DE27829F291530FC /* Acceptance.md */,
+				A50100000000000000000005 /* Anleitung.html */,
+				A50100000000000000000003 /* Anleitung.md */,
+				D18AF1CD6C4AD4BCBF263F76 /* Architecture.md */,
+				CBE19154BA3B05D466C5D99F /* Automation.md */,
+				F86EAF66A1C263A50C06B2DC /* Localization.md */,
+				070352486922CCADDE1A7D4A /* README.md */,
+				8333EBFEA326F9D37D991BB1 /* ReleaseNotes-0.9.0.md */,
+				0DD75539768F71388B1EFCA5 /* ReleaseNotes-0.9.1.md */,
+				D0513DD8FFD622418594472B /* ReleaseNotes-0.9.2.md */,
+				C989CD69182070D26C19C745 /* Review-Fixes.md */,
+				C72000000000000000000003 /* UserGuide.html */,
+				C72000000000000000000001 /* UserGuide.md */,
+			);
+			name = Documentation;
+			path = Docs;
+			sourceTree = "<group>";
+		};
+		7E1FD8E733BD4EEC4F33C3D3 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				3427E964EC2713DA997E2D63 /* Mac-Drawer-vollstaendig-ausblenden.applescript */,
+				DB64E615573EBC6C8E5E1326 /* Marker-Profil.applescript */,
+				37C7C1092F33C5D9968C24B7 /* Praesentation-beenden.applescript */,
+				D763545EF1A8F8DE4A71BC7D /* Praesentationsstift.applescript */,
+				556A54B173294DB4B9E73C78 /* Text-einfuegen.applescript */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
+		C3C85BF96A474101E3970DE9 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				C71000000000000000000001 /* Localizable.xcstrings */,
+			);
+			name = Localization;
+			path = Packages/PresentInkCore/Sources/PresentInkCore/Resources;
+			sourceTree = "<group>";
+		};
+		CF12F54AE009D9416E4B063B /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				D4CA37A38912DAA9C064CA3A /* archive.py */,
+				989CB7577EABEC7D1FCF9A8E /* build.sh */,
+				F649EF96D30DC907F4842B12 /* README.md */,
+				3D5595776E15852E09ABB240 /* render_help.py */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		DD05F3F33DE0B44B2A9B038C /* Shared UI */ = {
+			isa = PBXGroup;
+			children = (
+				C73000000000000000000001 /* InfoPlist.xcstrings */,
+				C82000000000000000000001 /* AppAboutView.swift */,
+				C74000000000000000000001 /* AppShortcuts.xcstrings */,
+				B10A2B86FF38924B40F31020 /* InkRenderer.swift */,
+				C81000000000000000000001 /* PresentInkAboutView.swift */,
+			);
+			name = "Shared UI";
+			path = SharedUI;
+			sourceTree = "<group>";
+		};
+		FE0A091FDBFB3E9C31B7A1BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A90100000000000000000009 /* PresentInkShortcuts.appex */,
+				3F25BD1146F13AA76188C34D /* PresentInk.app */,
+				AB4C6352B54D8DC9B57DE9DB /* PresentInk Companion.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		141BF609FA119AF4E18A9BB8 /* PresentInkMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0EB9797111D862C806B2A4F1 /* Build configuration list for PBXNativeTarget "PresentInkMac" */;
+			buildPhases = (
+				A90100000000000000000012 /* Embed Shortcuts */,
+				7477C85DF33F92070A419C9D /* Sources */,
+				F70C89477F4C05A89B45D237 /* Frameworks */,
+				0D2CBEF104D7B93CF9822FB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A90100000000000000000014 /* PBXTargetDependency */,
+			);
+			name = PresentInkMac;
+			packageProductDependencies = (
+				0089ADE67FC4C4DEB96EA35B /* PresentInkCore */,
+				21E28D2E4F520B37AE117A32 /* PresentInkLink */,
+			);
+			productName = PresentInkMac;
+			productReference = 3F25BD1146F13AA76188C34D /* PresentInk.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A90100000000000000000008 /* PresentInkShortcuts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9010000000000000000000D /* Build configuration list for PBXNativeTarget "PresentInkShortcuts" */;
+			buildPhases = (
+				A9010000000000000000000A /* Sources */,
+				A9010000000000000000000B /* Frameworks */,
+				A9010000000000000000000C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PresentInkShortcuts;
+			packageProductDependencies = (
+				A90100000000000000000010 /* PresentInkCore */,
+				A90100000000000000000011 /* PresentInkLink */,
+			);
+			productName = PresentInkShortcuts;
+			productReference = A90100000000000000000009 /* PresentInkShortcuts.appex */;
+			productType = "com.apple.product-type.extensionkit-extension";
+		};
+		CE24A2F3504593AB39205381 /* PresentInkCompanion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA89C6E76335CA0D9CAC704B /* Build configuration list for PBXNativeTarget "PresentInkCompanion" */;
+			buildPhases = (
+				2C666F8C82288A2B9FCDCE41 /* Sources */,
+				0E650D2EAB93B876DDC8862E /* Frameworks */,
+				931A79642D2269F74C49C508 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PresentInkCompanion;
+			packageProductDependencies = (
+				2028B35E3225105DF70A3875 /* PresentInkCore */,
+				0C4C292541A53A7059799408 /* PresentInkLink */,
+			);
+			productName = PresentInkCompanion;
+			productReference = AB4C6352B54D8DC9B57DE9DB /* PresentInk Companion.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F6F4DA8D93E88A08220E03B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2720;
+			};
+			buildConfigurationList = 128D1971520EF7E0088A5374 /* Build configuration list for PBXProject "PresentInk" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = de;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				de,
+				en,
+				Base,
+			);
+			mainGroup = 62BCE9422FF2D14F69AB80A1 /* PresentInk */;
+			packageReferences = (
+				73236AFA570BECBCDE57FDB7 /* XCLocalSwiftPackageReference "Packages/PresentInkCore" */,
+				04FE3879CCA5AC0BBE6348FB /* XCLocalSwiftPackageReference "Packages/PresentInkLink" */,
+			);
+			productRefGroup = FE0A091FDBFB3E9C31B7A1BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A90100000000000000000008 /* PresentInkShortcuts */,
+				141BF609FA119AF4E18A9BB8 /* PresentInkMac */,
+				CE24A2F3504593AB39205381 /* PresentInkCompanion */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0D2CBEF104D7B93CF9822FB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C81000000000000000000005 /* LICENSE in Resources */,
+				C74000000000000000000002 /* AppShortcuts.xcstrings in Resources */,
+				C73000000000000000000004 /* InfoPlist.xcstrings in Resources */,
+				C72000000000000000000004 /* UserGuide.html in Resources */,
+				C72000000000000000000002 /* UserGuide.md in Resources */,
+				C71000000000000000000004 /* Localizable.xcstrings in Resources */,
+				A50100000000000000000006 /* Anleitung.html in Resources */,
+				A50100000000000000000004 /* Anleitung.md in Resources */,
+				66C7D9977F0C0A9EFEF414AA /* PresentInk.sdef in Resources */,
+				BEBD899198199CFFE6E168E3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		931A79642D2269F74C49C508 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C81000000000000000000006 /* LICENSE in Resources */,
+				C73000000000000000000005 /* InfoPlist.xcstrings in Resources */,
+				C71000000000000000000005 /* Localizable.xcstrings in Resources */,
+				77250F56BD3679E693C404B0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9010000000000000000000C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C74000000000000000000003 /* AppShortcuts.xcstrings in Resources */,
+				C73000000000000000000006 /* InfoPlist.xcstrings in Resources */,
+				C71000000000000000000006 /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C666F8C82288A2B9FCDCE41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				755C89D6A38115F5E5288ADD /* CompanionModel.swift in Sources */,
+				E896F895D3B6FFFC24CBBCF1 /* CompanionView.swift in Sources */,
+				F22524CD548AB92CB689D62E /* ToolDrawerView.swift in Sources */,
+				28786B383111C51D476F730B /* PencilCanvasView.swift in Sources */,
+				E14BDBE7E427E618242E68CE /* PresentInkCompanionApp.swift in Sources */,
+				FD0729798F105268D68DE785 /* InkRenderer.swift in Sources */,
+				C81000000000000000000004 /* PresentInkAboutView.swift in Sources */,
+				C82000000000000000000003 /* AppAboutView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7477C85DF33F92070A419C9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A90100000000000000000006 /* MacShortcutServer.swift in Sources */,
+				A90100000000000000000004 /* ShortcutAutomation.swift in Sources */,
+				A90100000000000000000002 /* ShortcutEntities.swift in Sources */,
+				A80100000000000000000002 /* MacTextEntry.swift in Sources */,
+				A70100000000000000000002 /* MacDrawingSettingsView.swift in Sources */,
+				A50100000000000000000002 /* MacHelp.swift in Sources */,
+				CD311B41B1A38A92878AD5E7 /* AppleScriptSupport.swift in Sources */,
+				1BB0A9F5D87953CC4035CFC6 /* MacAutomation.swift in Sources */,
+				8C563D79534AA355A15FA320 /* PresentInkIntents.swift in Sources */,
+				059AF4A792D705071B1FDCCE /* AutomationActions.swift in Sources */,
+				5819A48253EA223A2C49265E /* MacMenus.swift in Sources */,
+				70ECC6095787E26E7A57147F /* MacToolDrawer.swift in Sources */,
+				96090870712AB6262AABAB32 /* CompanionHostView.swift in Sources */,
+				13257EE04A2E3D6C3887F50B /* CompanionServer.swift in Sources */,
+				2ACD86240C36B951EB6F52FE /* MacAppDelegate.swift in Sources */,
+				398052D6B999701F13910B2C /* MacCanvasView.swift in Sources */,
+				6912324B29FBA69027724083 /* MacSession.swift in Sources */,
+				C3BAC5F8787E835CC2C11BA1 /* PresentInkMacApp.swift in Sources */,
+				5955ED70ADB3159237C97BC9 /* ScreenPreviewService.swift in Sources */,
+				071B654C9B7DA6E6C2AEDCA6 /* InkRenderer.swift in Sources */,
+				C81000000000000000000003 /* PresentInkAboutView.swift in Sources */,
+				C82000000000000000000002 /* AppAboutView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9010000000000000000000A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A90100000000000000000016 /* PresentInkShortcutsExtension.swift in Sources */,
+				A90100000000000000000017 /* ShortcutEntities.swift in Sources */,
+				A90100000000000000000018 /* ShortcutAutomation.swift in Sources */,
+				A90100000000000000000019 /* PresentInkIntents.swift in Sources */,
+				A9010000000000000000001A /* AutomationActions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A90100000000000000000014 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A90100000000000000000008 /* PresentInkShortcuts */;
+			targetProxy = A90100000000000000000015 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D8C0C6B1D22EA8C7669B263 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		2DD07F4FD7C97ADD23482B2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Apps/macOS/PresentInk.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 18;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/macOS/Info.plist;
+				MARKETING_VERSION = 0.9.2;
+				PRODUCT_BUNDLE_IDENTIFIER = de.presentink.mac;
+				PRODUCT_NAME = PresentInk;
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		70FB41E72A10A8ABD9926420 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 18;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/iPadOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 0.9.2;
+				PRODUCT_BUNDLE_IDENTIFIER = de.presentink.companion;
+				PRODUCT_NAME = "PresentInk Companion";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		A9010000000000000000000E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = Apps/Shortcuts/Shortcuts.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 18;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/Shortcuts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 0.9.2;
+				PRODUCT_BUNDLE_IDENTIFIER = de.presentink.mac.shortcuts;
+				PRODUCT_NAME = PresentInkShortcuts;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A9010000000000000000000F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = Apps/Shortcuts/Shortcuts.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 18;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/Shortcuts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 0.9.2;
+				PRODUCT_BUNDLE_IDENTIFIER = de.presentink.mac.shortcuts;
+				PRODUCT_NAME = PresentInkShortcuts;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B47F9572D5ECEA70F0C403DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 18;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/iPadOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 0.9.2;
+				PRODUCT_BUNDLE_IDENTIFIER = de.presentink.companion;
+				PRODUCT_NAME = "PresentInk Companion";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		BFD315016DE16320F7E2120C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E692562841C270BBD284E2E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Apps/macOS/PresentInk.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 18;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/macOS/Info.plist;
+				MARKETING_VERSION = 0.9.2;
+				PRODUCT_BUNDLE_IDENTIFIER = de.presentink.mac;
+				PRODUCT_NAME = PresentInk;
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0EB9797111D862C806B2A4F1 /* Build configuration list for PBXNativeTarget "PresentInkMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E692562841C270BBD284E2E4 /* Debug */,
+				2DD07F4FD7C97ADD23482B2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		128D1971520EF7E0088A5374 /* Build configuration list for PBXProject "PresentInk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFD315016DE16320F7E2120C /* Debug */,
+				1D8C0C6B1D22EA8C7669B263 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9010000000000000000000D /* Build configuration list for PBXNativeTarget "PresentInkShortcuts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9010000000000000000000E /* Debug */,
+				A9010000000000000000000F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA89C6E76335CA0D9CAC704B /* Build configuration list for PBXNativeTarget "PresentInkCompanion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B47F9572D5ECEA70F0C403DD /* Debug */,
+				70FB41E72A10A8ABD9926420 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		04FE3879CCA5AC0BBE6348FB /* XCLocalSwiftPackageReference "Packages/PresentInkLink" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/PresentInkLink;
+		};
+		73236AFA570BECBCDE57FDB7 /* XCLocalSwiftPackageReference "Packages/PresentInkCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/PresentInkCore;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0089ADE67FC4C4DEB96EA35B /* PresentInkCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 73236AFA570BECBCDE57FDB7 /* XCLocalSwiftPackageReference "Packages/PresentInkCore" */;
+			productName = PresentInkCore;
+		};
+		0C4C292541A53A7059799408 /* PresentInkLink */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04FE3879CCA5AC0BBE6348FB /* XCLocalSwiftPackageReference "Packages/PresentInkLink" */;
+			productName = PresentInkLink;
+		};
+		2028B35E3225105DF70A3875 /* PresentInkCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 73236AFA570BECBCDE57FDB7 /* XCLocalSwiftPackageReference "Packages/PresentInkCore" */;
+			productName = PresentInkCore;
+		};
+		21E28D2E4F520B37AE117A32 /* PresentInkLink */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04FE3879CCA5AC0BBE6348FB /* XCLocalSwiftPackageReference "Packages/PresentInkLink" */;
+			productName = PresentInkLink;
+		};
+		A90100000000000000000010 /* PresentInkCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 73236AFA570BECBCDE57FDB7 /* XCLocalSwiftPackageReference "Packages/PresentInkCore" */;
+			productName = PresentInkCore;
+		};
+		A90100000000000000000011 /* PresentInkLink */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04FE3879CCA5AC0BBE6348FB /* XCLocalSwiftPackageReference "Packages/PresentInkLink" */;
+			productName = PresentInkLink;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F6F4DA8D93E88A08220E03B7 /* Project object */;
+}

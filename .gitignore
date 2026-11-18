@@ -1,0 +1,34 @@
+# Xcode and Swift build/user state
+.DS_Store
+.build/
+.swiftpm/
+build/
+DerivedData/
+xcuserdata/
+*.xcuserstate
+__pycache__/
+*.pyc
+
+# Signing material and credentials
+.env
+.env.*
+!.env.example
+*.p12
+*.pfx
+*.p8
+*.pem
+*.key
+*.mobileprovision
+*.provisionprofile
+*.cer
+
+# Generated archives and local work
+*.zip
+*.xcarchive/
+work/
+
+# Additional local tooling state
+.swiftpm-cache/
+*.log
+*.dSYM/
+Config/*.local.xcconfig

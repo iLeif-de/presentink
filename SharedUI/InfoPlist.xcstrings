@@ -1,0 +1,69 @@
+{
+  "sourceLanguage" : "de",
+  "strings" : {
+    "CFBundleName" : {
+      "comment" : "Bundle name",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "PresentInk Companion"
+          }
+        }
+      }
+    },
+    "NSAppleEventsUsageDescription" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PresentInk steuert Keynote und PowerPoint über die Folienpfeile auf dem verbundenen iPad."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PresentInk controls Keynote and PowerPoint when you tap slide navigation arrows on your connected iPad."
+          }
+        }
+      }
+    },
+    "NSLocalNetworkUsageDescription" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PresentInk verbindet Mac und iPad im lokalen Netzwerk für Annotationen und optionale Bildschirmvorschau."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PresentInk connects your Mac and iPad on the local network for annotations and optional screen previews."
+          }
+        }
+      }
+    },
+    "NSScreenCaptureUsageDescription" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der ausgewählte Bildschirm wird als Zeichenhintergrund auf dem gekoppelten iPad angezeigt. Es wird nichts aufgezeichnet."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The selected display is shown as the drawing background on your paired iPad. Nothing is recorded."
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

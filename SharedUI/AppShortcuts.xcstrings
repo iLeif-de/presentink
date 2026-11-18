@@ -1,0 +1,174 @@
+{
+  "sourceLanguage": "de",
+  "strings": {
+    "Annotationen in ${applicationName} ausblenden": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "Annotationen in ${applicationName} ausblenden"
+            ]
+          }
+        },
+        "en": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "Hide annotations in ${applicationName}"
+            ]
+          }
+        }
+      }
+    },
+    "Displays in ${applicationName} auflisten": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "Displays in ${applicationName} auflisten"
+            ]
+          }
+        },
+        "en": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "List displays in ${applicationName}"
+            ]
+          }
+        }
+      }
+    },
+    "Farbe in ${applicationName} einstellen": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "Farbe in ${applicationName} einstellen"
+            ]
+          }
+        },
+        "en": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "Set color in ${applicationName}"
+            ]
+          }
+        }
+      }
+    },
+    "Status von ${applicationName} abfragen": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "Status von ${applicationName} abfragen"
+            ]
+          }
+        },
+        "en": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "Get status from ${applicationName}"
+            ]
+          }
+        }
+      }
+    },
+    "Strichstärke in ${applicationName} einstellen": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "Strichstärke in ${applicationName} einstellen"
+            ]
+          }
+        },
+        "en": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "Set stroke width in ${applicationName}"
+            ]
+          }
+        }
+      }
+    },
+    "Werkzeug in ${applicationName} einstellen": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "Werkzeug in ${applicationName} einstellen"
+            ]
+          }
+        },
+        "en": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "Set tool in ${applicationName}"
+            ]
+          }
+        }
+      }
+    },
+    "Werkzeuge in ${applicationName} umschalten": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "Werkzeuge in ${applicationName} umschalten"
+            ]
+          }
+        },
+        "en": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "Toggle tools in ${applicationName}"
+            ]
+          }
+        }
+      }
+    },
+    "Zeichenmodus in ${applicationName} umschalten": {
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "Zeichenmodus in ${applicationName} umschalten"
+            ]
+          }
+        },
+        "en": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "Toggle drawing mode in ${applicationName}"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "version": "1.1"
+}

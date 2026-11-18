@@ -1,0 +1,260 @@
+[
+  {
+    "operation": "toggleDrawing",
+    "event": "TgDr",
+    "command": "toggle drawing",
+    "title": "Zeichenmodus umschalten"
+  },
+  {
+    "operation": "enableDrawing",
+    "event": "EnDr",
+    "command": "enable drawing",
+    "title": "Zeichnen einschalten"
+  },
+  {
+    "operation": "disableDrawing",
+    "event": "DsDr",
+    "command": "disable drawing",
+    "title": "Bedienmodus aktivieren"
+  },
+  {
+    "operation": "showAnnotations",
+    "event": "ShAn",
+    "command": "show annotations",
+    "title": "Annotationen zeigen"
+  },
+  {
+    "operation": "hideAnnotations",
+    "event": "HdAn",
+    "command": "hide annotations",
+    "title": "Annotationen ausblenden"
+  },
+  {
+    "operation": "toggleAnnotations",
+    "event": "TgAn",
+    "command": "toggle annotations",
+    "title": "Annotationen umschalten"
+  },
+  {
+    "operation": "expandDrawer",
+    "event": "ExDw",
+    "command": "show drawer",
+    "title": "Drawer ausziehen"
+  },
+  {
+    "operation": "compactDrawer",
+    "event": "CpDw",
+    "command": "compact drawer",
+    "title": "Drawer kompakt"
+  },
+  {
+    "operation": "hideDrawer",
+    "event": "HdDw",
+    "command": "hide drawer",
+    "title": "Drawer verstecken"
+  },
+  {
+    "operation": "toggleDrawer",
+    "event": "TgDw",
+    "command": "toggle drawer",
+    "title": "Drawer umschalten"
+  },
+  {
+    "operation": "undo",
+    "event": "Undo",
+    "command": "undo annotation",
+    "title": "Rückgängig"
+  },
+  {
+    "operation": "redo",
+    "event": "Redo",
+    "command": "redo annotation",
+    "title": "Wiederholen"
+  },
+  {
+    "operation": "clear",
+    "event": "ClAn",
+    "command": "clear annotations",
+    "title": "Alle Annotationen löschen"
+  },
+  {
+    "operation": "startConnection",
+    "event": "StCn",
+    "command": "start connection",
+    "title": "iPad-Verbindung starten"
+  },
+  {
+    "operation": "stopConnection",
+    "event": "SpCn",
+    "command": "stop connection",
+    "title": "iPad-Verbindung stoppen"
+  },
+  {
+    "operation": "toggleConnection",
+    "event": "TgCn",
+    "command": "toggle connection",
+    "title": "iPad-Verbindung umschalten"
+  },
+  {
+    "operation": "startPreview",
+    "event": "StPv",
+    "command": "start preview",
+    "title": "Bildschirmvorschau starten"
+  },
+  {
+    "operation": "stopPreview",
+    "event": "SpPv",
+    "command": "stop preview",
+    "title": "Bildschirmvorschau pausieren"
+  },
+  {
+    "operation": "togglePreview",
+    "event": "TgPv",
+    "command": "toggle preview",
+    "title": "Bildschirmvorschau umschalten"
+  },
+  {
+    "operation": "emergencyHide",
+    "event": "EmHd",
+    "command": "emergency hide",
+    "title": "Notfall: Eingabe freigeben"
+  },
+  {
+    "operation": "showSettings",
+    "event": "ShSt",
+    "command": "show settings",
+    "title": "Verbindung und Freigabe öffnen"
+  },
+  {
+    "operation": "resetPairing",
+    "event": "RsPr",
+    "command": "reset pairing",
+    "title": "Kopplung zurücksetzen"
+  },
+  {
+    "operation": "showApplication",
+    "event": "ShAp",
+    "command": "show application",
+    "title": "PresentInk zeigen"
+  },
+  {
+    "operation": "hideApplication",
+    "event": "HdAp",
+    "command": "hide application",
+    "title": "PresentInk ausblenden"
+  },
+  {
+    "operation": "quit",
+    "event": "Quit",
+    "command": "quit",
+    "title": "PresentInk beenden"
+  },
+  {
+    "operation": "getStatus",
+    "event": "Stat",
+    "command": "read status",
+    "title": "Status abfragen"
+  },
+  {
+    "operation": "listDisplays",
+    "event": "Dpls",
+    "command": "list displays",
+    "title": "Displays auflisten"
+  },
+  {
+    "operation": "showHelp",
+    "event": "ShHp",
+    "command": "show shortcuts",
+    "title": "Tastaturkürzel anzeigen"
+  },
+  {
+    "operation": "showAbout",
+    "event": "ShAb",
+    "command": "show about",
+    "title": "Über PresentInk anzeigen"
+  },
+  {
+    "operation": "openDisplaySettings",
+    "event": "DsSt",
+    "command": "open display settings",
+    "title": "Anzeigeeinstellungen öffnen"
+  },
+  {
+    "operation": "openCaptureSettings",
+    "event": "CpSt",
+    "command": "open capture settings",
+    "title": "Aufnahmeberechtigungen öffnen"
+  },
+  {
+    "operation": "setTool",
+    "event": "SlTl",
+    "command": "select tool",
+    "title": "Werkzeug setzen"
+  },
+  {
+    "operation": "setColor",
+    "event": "SlCl",
+    "command": "select color",
+    "title": "Farbe setzen"
+  },
+  {
+    "operation": "setWidth",
+    "event": "StWd",
+    "command": "change stroke width",
+    "title": "Strichstärke setzen"
+  },
+  {
+    "operation": "setDrawer",
+    "event": "StDw",
+    "command": "change drawer",
+    "title": "Drawer-Zustand setzen"
+  },
+  {
+    "operation": "setDisplay",
+    "event": "SlDs",
+    "command": "select display",
+    "title": "Zieldisplay setzen"
+  },
+  {
+    "operation": "showPreferences",
+    "event": "ShPf",
+    "command": "show preferences",
+    "title": "Zeichen-Einstellungen öffnen"
+  },
+  {
+    "operation": "getDrawingSettings",
+    "event": "RdSt",
+    "command": "read drawing settings",
+    "title": "Zeichen-Einstellungen und Profile lesen"
+  },
+  {
+    "operation": "setDrawingSettings",
+    "event": "ApSt",
+    "command": "apply drawing settings",
+    "title": "Zeichen-Einstellungen aus JSON anwenden"
+  },
+  {
+    "operation": "selectProfile",
+    "event": "SlPr",
+    "command": "select profile",
+    "title": "Zeichenprofil auswählen"
+  },
+  {
+    "operation": "setOpacity",
+    "event": "StOp",
+    "command": "change ink opacity",
+    "title": "Deckkraft des aktuellen Werkzeugs (0.05–1)"
+  },
+  {
+    "operation": "setPreviewPolicy",
+    "event": "ShPl",
+    "command": "configure sharing",
+    "title": "PresentInk-Zustimmung der aktuellen Kopplung als JSON einstellen"
+  },
+  {
+    "operation": "insertText",
+    "event": "InTx",
+    "command": "insert text",
+    "title": "Text einfügen"
+  }
+]
